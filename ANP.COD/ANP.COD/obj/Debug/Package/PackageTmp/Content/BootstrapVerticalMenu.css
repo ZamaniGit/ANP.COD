@@ -1,0 +1,47 @@
+﻿
+
+
+
+
+@font-face {
+	font-family: BYekan;
+	src: url('../fonts/BYekan.eot'), url('../fonts/BYekan.ttf') format('truetype'), url('../fonts/BYekan.woff');
+}
+
+a .panel-title
+{
+    font-family:BYekan;    
+    font-size: 10pt;
+        font-style: normal;
+    font-variant: normal;
+}
+
+.panel-heading .accordion-toggle :after
+{
+    /* symbol for "opening" panels */
+    font-family:BYekan;    
+    font-size: 10pt;
+    font-style: normal;
+    font-variant: normal;
+    content: "↑";
+    float: left;
+    color: grey;
+    overflow: no-display;
+}
+.panel-heading .accordion-toggle.collapsed :after
+{
+    /* symbol for "collapsed" panels */
+    content: "↓";
+    font-family:BYekan;    
+    font-size: 10pt;
+    font-style: normal;
+    font-variant: normal;
+}
+a.accordion-toggle
+{
+    text-decoration: none;
+    font-family:BYekan;    
+    font-size: 12pt;
+    font-style: normal;
+    font-variant: normal;
+}

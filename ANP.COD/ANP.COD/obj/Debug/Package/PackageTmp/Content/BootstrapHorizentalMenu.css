@@ -1,0 +1,114 @@
+﻿
+@font-face {
+	font-family: FontAwesome;
+	src: url('../fonts/FontAwesome.otf') format('opentype');
+	src: url('../fonts/fontawesome-webfont.eot'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.woff');
+}
+@font-face {
+	font-family: BYekan;
+	src: url('../fonts/BYekan.eot'), url('../fonts/BYekan.ttf') format('truetype'), url('../fonts/BYekan.woff');
+}
+
+/*.tnav .navbar { background:#F06; height:30px; }*/
+.navbar-inner-sm
+{
+    background-color: #F2FAFD;
+    padding: 3px 10px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1);
+    font-size:10pt;
+    font-style:normal;
+    font-variant:normal;
+    font-family:BYekan;
+}
+
+.LiMenu
+{
+    direction:rtl; 
+    text-align:right;
+    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal;
+}
+.navbar-inner-sm .nav     
+{
+    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal;
+    position: relative;
+    left: 0;
+    display: block;
+    float: right;
+    margin: 0 0 0 0;
+    }
+.navbar-inner-sm .nav.pull-right     
+{
+    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal;
+    float: left;
+    }
+.navbar-inner-sm .nav > li 
+{
+    display: block;
+    float: right;     
+    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal;}
+.navbar-inner-sm .nav > li > a     
+{
+    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal; 
+    float: none;
+    padding: 4px 10px;
+    line-height: 19px;
+    color: #999999;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);}
+.navbar-inner-sm .nav > li > a:hover
+{
+    background-color: transparent;
+    color: #000000;
+    text-decoration: none;
+    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal;
+}
+.navbar-inner-sm .nav .active > a,.navbar .nav .active > a:hover 
+{color: #ffffff;
+ text-decoration: none;
+ background-color: #003753;    
+ font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal;}
+.navbar-inner-sm .divider-vertical     
+{
+    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-variant:normal;
+    height: 27px;
+    width: 1px;
+    margin: 0 9px;
+    overflow: hidden;
+    background-color: #282828;
+    border-left: 1px solid #3f3f3f; 
+    border-right: 1px solid #161616;
+    }
+.navbar-inner-sm .nav.pull-right 
+{    font-size:10pt;
+    font-style:normal;
+    font-family:BYekan;
+    font-weight:normal;
+    font-variant:normal;
+    margin-left: 0px;
+    margin-right: 0px;}

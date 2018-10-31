@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFEFD8F8-1DE3-418E-8FAD-AE334D801181}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ANP.Bussiness</RootNamespace>
+    <AssemblyName>ANP.Bussiness</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Stimulsoft.Base, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Host\Reports\_ControlForm.cs" />
+    <Compile Include="Host\Reports\_ReceiptListReport.cs" />
+    <Compile Include="Host\Reports\_RegistrationReceiptListReport.cs" />
+    <Compile Include="Host\Reports\_RepDebitForState.cs" />
+    <Compile Include="Host\Reports\_RepFinancialParcelOfFirstState.cs" />
+    <Compile Include="Host\Reports\_RepIncomingParce.cs" />
+    <Compile Include="Host\_RollBackAcceptReceipt.cs" />
+    <Compile Include="Host\_BankReceiptEditation.cs" />
+    <Compile Include="Host\_BankReceiptList.cs" />
+    <Compile Include="Host\_BankReceiptRegistration.cs" />
+    <Compile Include="Host\_BarcodeReceiptEditation.cs" />
+    <Compile Include="Host\_ChangePriceMohandesi.cs" />
+    <Compile Include="Host\_ChangePriceParcels.cs" />
+    <Compile Include="Host\_CheckBarcodeListForDel.cs" />
+    <Compile Include="Host\_DeleteBarcode.cs" />
+    <Compile Include="Host\_FinancialMood.cs" />
+    <Compile Include="Host\_FinancialPanel.cs" />
+    <Compile Include="Host\_Holiday.cs" />
+    <Compile Include="Host\_LstReceiptInfo.cs" />
+    <Compile Include="Host\_ShowAllParcels.cs" />
+    <Compile Include="Host\_SupplementReceiptRegistration.cs" />
+    <Compile Include="Models\IBarcodeReceiptEditation.cs" />
+    <Compile Include="Models\IChangePriceMohandesi.cs" />
+    <Compile Include="Models\IChangePriceParcels.cs" />
+    <Compile Include="Models\ICheckBarcodeListForDel.cs" />
+    <Compile Include="Models\IDeleteBarcode.cs" />
+    <Compile Include="Models\IRepIncomingParcel.cs" />
+    <Compile Include="Models\IRollBackAcceptReceipt.cs" />
+    <Compile Include="Models\IShowAllParcels.cs" />
+    <Compile Include="Models\Reports\IControlForm.cs" />
+    <Compile Include="Models\Reports\IReceiptListReport.cs" />
+    <Compile Include="Models\Reports\IRegistrationReceiptListReport.cs" />
+    <Compile Include="Models\Reports\IRepDebitForState.cs" />
+    <Compile Include="Models\Reports\IRepFinancialParcelOfFirstState.cs" />
+    <Compile Include="Models\Reports\IrptBarcodeDetail.cs" />
+    <Compile Include="Objects\LoginDetails.cs" />
+    <Compile Include="Models\DefultInfo.cs" />
+    <Compile Include="Basic\Utility.cs" />
+    <Compile Include="Host\UsersManagment.cs" />
+    <Compile Include="Host\_ChangePassword.cs" />
+    <Compile Include="Models\IBankReceiptEditation.cs" />
+    <Compile Include="Models\IBankReceiptList.cs" />
+    <Compile Include="Models\IBankReceiptRegistration.cs" />
+    <Compile Include="Models\IChangePassword.cs" />
+    <Compile Include="Models\IFinancialMood.cs" />
+    <Compile Include="Models\IFinancialPanel.cs" />
+    <Compile Include="Models\IHoliday.cs" />
+    <Compile Include="Models\IHome.cs" />
+    <Compile Include="Models\ILoginModel.cs" />
+    <Compile Include="Models\ILstReceiptInfo.cs" />
+    <Compile Include="Models\ISupplementReceiptRegistration.cs" />
+    <Compile Include="Models\IUsersManagment.cs" />
+    <Compile Include="Models\LoginInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ANP.Common\ANP.Common.csproj">
+      <Project>{DF838299-BC5D-49DA-83CF-40AB0971337D}</Project>
+      <Name>ANP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ANP.Data\ANP.Data.csproj">
+      <Project>{25837014-1A7C-4BB8-A556-2A28D550F9C2}</Project>
+      <Name>ANP.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64326</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

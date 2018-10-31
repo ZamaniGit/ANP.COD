@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1107D51D-F27C-4073-8466-D60602F23631}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ANP.COD</RootNamespace>
+    <AssemblyName>ANP.COD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarcodeDetailDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodeDetailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AlertControl.ascx.cs">
+      <DependentUpon>AlertControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AlertControl.ascx.designer.cs">
+      <DependentUpon>AlertControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateSelector.ascx.cs">
+      <DependentUpon>DateSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DateSelector.ascx.designer.cs">
+      <DependentUpon>DateSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HorizentalUserMenuBootstrap.ascx.cs">
+      <DependentUpon>HorizentalUserMenuBootstrap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HorizentalUserMenuBootstrap.ascx.designer.cs">
+      <DependentUpon>HorizentalUserMenuBootstrap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PersianCal.ascx.cs">
+      <DependentUpon>PersianCal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PersianCal.ascx.designer.cs">
+      <DependentUpon>PersianCal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShortMenu.ascx.cs">
+      <DependentUpon>ShortMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShortMenu.ascx.designer.cs">
+      <DependentUpon>ShortMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VerticalUserMenuBootStrap.ascx.cs">
+      <DependentUpon>VerticalUserMenuBootStrap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\VerticalUserMenuBootStrap.ascx.designer.cs">
+      <DependentUpon>VerticalUserMenuBootStrap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="erorr.aspx.cs">
+      <DependentUpon>erorr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="erorr.aspx.designer.cs">
+      <DependentUpon>erorr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Accounts\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\ChangePassword.ascx.designer.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Accounts\frmUsersManagment.ascx.cs">
+      <DependentUpon>frmUsersManagment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\frmUsersManagment.ascx.designer.cs">
+      <DependentUpon>frmUsersManagment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exchange\ChangePriceMohandesi.ascx.cs">
+      <DependentUpon>ChangePriceMohandesi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Exchange\ChangePriceMohandesi.ascx.designer.cs">
+      <DependentUpon>ChangePriceMohandesi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exchange\CheckBarcodeListForDel.ascx.cs">
+      <DependentUpon>CheckBarcodeListForDel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Exchange\CheckBarcodeListForDel.ascx.designer.cs">
+      <DependentUpon>CheckBarcodeListForDel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exchange\DeleteBarcode.ascx.cs">
+      <DependentUpon>DeleteBarcode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Exchange\DeleteBarcode.ascx.designer.cs">
+      <DependentUpon>DeleteBarcode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exchange\frmParcelList.ascx.cs">
+      <DependentUpon>frmParcelList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Exchange\frmParcelList.ascx.designer.cs">
+      <DependentUpon>frmParcelList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exchange\ShowAllParcels_Old.ascx.cs">
+      <DependentUpon>ShowAllParcels_Old.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Exchange\ShowAllParcels_Old.ascx.designer.cs">
+      <DependentUpon>ShowAllParcels_Old.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\BankReceiptEditation.ascx.cs">
+      <DependentUpon>BankReceiptEditation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\BankReceiptEditation.ascx.designer.cs">
+      <DependentUpon>BankReceiptEditation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\BankReceiptList.ascx.cs">
+      <DependentUpon>BankReceiptList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\BankReceiptList.ascx.designer.cs">
+      <DependentUpon>BankReceiptList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\BankReceiptRegistration.ascx.cs">
+      <DependentUpon>BankReceiptRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\BankReceiptRegistration.ascx.designer.cs">
+      <DependentUpon>BankReceiptRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\BarcodeReceiptEditation.ascx.cs">
+      <DependentUpon>BarcodeReceiptEditation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\BarcodeReceiptEditation.ascx.designer.cs">
+      <DependentUpon>BarcodeReceiptEditation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\FinancialPanel.ascx.cs">
+      <DependentUpon>FinancialPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\FinancialPanel.ascx.designer.cs">
+      <DependentUpon>FinancialPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Basic\HolidayList.ascx.cs">
+      <DependentUpon>HolidayList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Basic\HolidayList.ascx.designer.cs">
+      <DependentUpon>HolidayList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\LstReceiptInfo.ascx.cs">
+      <DependentUpon>LstReceiptInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\LstReceiptInfo.ascx.designer.cs">
+      <DependentUpon>LstReceiptInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Basic\ReceiptFinancialMood.ascx.cs">
+      <DependentUpon>ReceiptFinancialMood.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Basic\ReceiptFinancialMood.ascx.designer.cs">
+      <DependentUpon>ReceiptFinancialMood.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\RollBackAcceptReceipt.ascx.cs">
+      <DependentUpon>RollBackAcceptReceipt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\RollBackAcceptReceipt.ascx.designer.cs">
+      <DependentUpon>RollBackAcceptReceipt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Financial\SupplementReceiptRegistration.ascx.cs">
+      <DependentUpon>SupplementReceiptRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Financial\SupplementReceiptRegistration.ascx.designer.cs">
+      <DependentUpon>SupplementReceiptRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\ControlForm.ascx.cs">
+      <DependentUpon>ControlForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\ControlForm.ascx.designer.cs">
+      <DependentUpon>ControlForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\mrtFinancialParcelOfFirstState.ascx.cs">
+      <DependentUpon>mrtFinancialParcelOfFirstState.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\mrtFinancialParcelOfFirstState.ascx.designer.cs">
+      <DependentUpon>mrtFinancialParcelOfFirstState.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepBarcodeDetail_Deleted.ascx.cs">
+      <DependentUpon>RepBarcodeDetail_Deleted.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepBarcodeDetail_Deleted.ascx.designer.cs">
+      <DependentUpon>RepBarcodeDetail_Deleted.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepBarcodeDetail.ascx.cs">
+      <DependentUpon>RepBarcodeDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepBarcodeDetail.ascx.designer.cs">
+      <DependentUpon>RepBarcodeDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepDebitForState.ascx.cs">
+      <DependentUpon>RepDebitForState.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepDebitForState.ascx.designer.cs">
+      <DependentUpon>RepDebitForState.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepFinancialParcelOfFirstState.ascx.cs">
+      <DependentUpon>RepFinancialParcelOfFirstState.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepFinancialParcelOfFirstState.ascx.designer.cs">
+      <DependentUpon>RepFinancialParcelOfFirstState.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepGhaboolAndMobadeleh.ascx.cs">
+      <DependentUpon>RepGhaboolAndMobadeleh.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepGhaboolAndMobadeleh.ascx.designer.cs">
+      <DependentUpon>RepGhaboolAndMobadeleh.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepIncomingParcel.ascx.cs">
+      <DependentUpon>RepIncomingParcel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepIncomingParcel.ascx.designer.cs">
+      <DependentUpon>RepIncomingParcel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepOneBarCode.ascx.cs">
+      <DependentUpon>RepOneBarCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepOneBarCode.ascx.designer.cs">
+      <DependentUpon>RepOneBarCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\RepReceiptDetailes.ascx.cs">
+      <DependentUpon>RepReceiptDetailes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\RepReceiptDetailes.ascx.designer.cs">
+      <DependentUpon>RepReceiptDetailes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\GhaboolAndMobadeleh_Filter.ascx.cs">
+      <DependentUpon>GhaboolAndMobadeleh_Filter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\GhaboolAndMobadeleh_Filter.ascx.designer.cs">
+      <DependentUpon>GhaboolAndMobadeleh_Filter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StartPage.ascx.cs">
+      <DependentUpon>StartPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\StartPage.ascx.designer.cs">
+      <DependentUpon>StartPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Permission.aspx.cs">
+      <DependentUpon>Permission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Permission.aspx.designer.cs">
+      <DependentUpon>Permission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wrongdoer.aspx.cs">
+      <DependentUpon>Wrongdoer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wrongdoer.aspx.designer.cs">
+      <DependentUpon>Wrongdoer.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Logs\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-toggle.min.css" />
+    <Content Include="Content\LoginFont.css" />
+    <Content Include="Content\Login.css" />
+    <Content Include="Content\bootstrap-select.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\BootstrapHorizentalMenu.css" />
+    <Content Include="Content\BootstrapVerticalMenu.css" />
+    <Content Include="Content\calendar.css" />
+    <Content Include="Content\ctrReport.css" />
+    <Content Include="Content\jquery.Bootstrap-PersianDateTimePicker.css" />
+    <Content Include="Content\jquery.Bootstrap-PersianDateTimePicker.min.css" />
+    <Content Include="Content\MyStyle.css" />
+    <Content Include="Content\Report.css" />
+    <Content Include="Content\ShortMenu.css" />
+    <Content Include="Controls\AlertControl.ascx" />
+    <Content Include="Controls\DateSelector.ascx" />
+    <Content Include="Controls\HorizentalUserMenuBootstrap.ascx" />
+    <Content Include="Controls\PersianCal.ascx" />
+    <Content Include="Controls\ShortMenu.ascx" />
+    <Content Include="Controls\VerticalUserMenuBootStrap.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="erorr.aspx" />
+    <Content Include="Forms\Accounts\ChangePassword.ascx" />
+    <Content Include="Forms\Accounts\frmUsersManagment.ascx" />
+    <Content Include="Forms\Exchange\ChangePriceMohandesi.ascx" />
+    <Content Include="Forms\Exchange\CheckBarcodeListForDel.ascx" />
+    <Content Include="Forms\Exchange\DeleteBarcode.ascx" />
+    <Content Include="Forms\Exchange\frmParcelList.ascx" />
+    <Content Include="Forms\Exchange\ShowAllParcels_Old.ascx" />
+    <Content Include="Forms\Financial\BankReceiptEditation.ascx" />
+    <Content Include="Forms\Financial\BankReceiptList.ascx" />
+    <Content Include="Forms\Financial\BankReceiptRegistration.ascx" />
+    <Content Include="Forms\Financial\BarcodeReceiptEditation.ascx" />
+    <Content Include="Forms\Financial\FinancialPanel.ascx" />
+    <Content Include="Forms\Basic\HolidayList.ascx" />
+    <Content Include="Forms\Financial\LstReceiptInfo.ascx" />
+    <Content Include="Forms\Basic\ReceiptFinancialMood.ascx" />
+    <Content Include="Forms\Financial\RollBackAcceptReceipt.ascx" />
+    <Content Include="Forms\Financial\SupplementReceiptRegistration.ascx" />
+    <Content Include="Forms\Reports\ControlForm.ascx" />
+    <Content Include="Forms\Reports\mrtFinancialParcelOfFirstState.ascx" />
+    <Content Include="Forms\Reports\RepBarcodeDetail_Deleted.ascx" />
+    <Content Include="Forms\Reports\RepBarcodeDetail.ascx" />
+    <Content Include="Forms\Reports\RepDebitForState.ascx" />
+    <Content Include="Forms\Reports\RepFinancialParcelOfFirstState.ascx" />
+    <Content Include="Forms\Reports\RepGhaboolAndMobadeleh.ascx" />
+    <Content Include="Forms\Reports\RepIncomingParcel.ascx" />
+    <Content Include="Forms\Reports\RepOneBarCode.ascx" />
+    <Content Include="Forms\Reports\RepReceiptDetailes.ascx" />
+    <Content Include="Forms\Reports\GhaboolAndMobadeleh_Filter.ascx" />
+    <Content Include="Forms\StartPage.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\328.gif" />
+    <Content Include="Images\agt_home.png" />
+    <Content Include="Images\backgrand.jpg" />
+    <Content Include="Images\excel.png" />
+    <Content Include="Images\Exit.png" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\header.png" />
+    <Content Include="Images\login-box---backgrand.jpg" />
+    <Content Include="Images\login-page--logo.png" />
+    <Content Include="Images\MainProduct.png" />
+    <Content Include="Images\monitor.png" />
+    <Content Include="Images\post_arm.JPG" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\JS_BankReceiptRegistration.js" />
+    <Content Include="Scripts\bootstrap-toggle.min.js" />
+    <Content Include="Scripts\global.js" />
+    <Content Include="Scripts\jquery.ui.autocomplete.js" />
+    <Content Include="Scripts\jquery.ui.button.js" />
+    <Content Include="Scripts\jquery.ui.combobox.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.position.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\MyJavaScrip.js" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Wrongdoer.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Permission.aspx" />
+    <Content Include="Scripts\bootstrap-select.js" />
+    <Content Include="Scripts\bootstrap-select.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\calendar.js" />
+    <Content Include="Scripts\defaults-fa_IR.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\calendar_Old.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery.Bootstrap-PersianDateTimePicker.js" />
+    <Content Include="Scripts\jquery.Bootstrap-PersianDateTimePicker.min.js" />
+    <Content Include="Scripts\jsLogin.js" />
+    <Content Include="Scripts\ShortMenu.js" />
+    <Content Include="Scripts\Validation\jquery.validate.js" />
+    <Content Include="Scripts\Validation\jquery.validate.min.js" />
+    <Content Include="Scripts\Validation\jquery.validate.unobtrusive.bootstrap.js" />
+    <Content Include="Scripts\Validation\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Validation\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BarcodeDetailDataSet.xsc">
+      <DependentUpon>BarcodeDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BarcodeDetailDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarcodeDetailDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarcodeDetailDataSet.xss">
+      <DependentUpon>BarcodeDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.svg" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\fontawesome-webfont.woff2" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.svg" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="fonts\BYekan.eot" />
+    <None Include="fonts\BYekan.ttf" />
+    <None Include="fonts\BYekan.woff" />
+    <None Include="Forms\Reports\MRT\mrtBarcodeDetailes.mrt" />
+    <None Include="Forms\Reports\MRT\mrtFinancialParcelOfFirstState.mrt" />
+    <None Include="Images\cross.svg" />
+    <None Include="Images\star.svg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ANP.Bussiness\ANP.Bussiness.csproj">
+      <Project>{EFEFD8F8-1DE3-418E-8FAD-AE334D801181}</Project>
+      <Name>ANP.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ANP.Common\ANP.Common.csproj">
+      <Project>{DF838299-BC5D-49DA-83CF-40AB0971337D}</Project>
+      <Name>ANP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ANP.Data\ANP.Data.csproj">
+      <Project>{25837014-1A7C-4BB8-A556-2A28D550F9C2}</Project>
+      <Name>ANP.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64319</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1147/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,43 @@
+﻿@font-face
+{
+	font-family: 'BYekan'; /*تعریف یک نام برای فونت*/
+	src: url('../Fonts/BYekan.eot'); /*اکسپلورر 9 به بعد*/
+	src: local('bYekan'), /*بررسی نصب بودن فونت در سیستم کاربر*/ 
+	local('b Yekan'), /*برای برخی از مرورگرها مانند سافاری*/ 
+	url('../Fonts/BYekan.eot?#iefix') format('embedded-opentype'), /*هک برای اکسپلورر 8 و ماقبل*/ 
+	url('../Fonts/BYekan.woff') format('woff'), /*مرورگر های جدید*/ 
+	url('../Fonts/BYekan.ttf') format('truetype') /*تمام مرورگرها به جزء اکسپلورر*/;
+}
+
+body
+{
+	font-family: BYekan;
+	background-color: #FFF;
+	direction: rtl;
+	margin: 0;
+	font-size: 12px;
+}
+
+.tblMainFilter
+{
+	direction: rtl;
+	padding: 15px;
+	margin-top: 60px;
+	border-width: 1px;
+	box-shadow: 1px 1px 10px #CCC;
+	border-radius: 7px;
+}
+
+.Lable
+{
+	font-family: BYekan;
+	padding: 0px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+select:disabled
+{
+	background-color: #E1E1E1;
+}

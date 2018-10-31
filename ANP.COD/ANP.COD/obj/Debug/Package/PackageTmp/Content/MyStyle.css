@@ -1,0 +1,66 @@
+﻿
+
+@font-face
+{
+    font-family: 'BYekan'; /*تعریف یک نام برای فونت*/
+    src: url('../fonts/BYekan.eot'); /*اکسپلورر 9 به بعد*/
+    src: local('bYekan'), /*بررسی نصب بودن فونت در سیستم کاربر*/ local('b Yekan'), /*برای برخی از مرورگرها مانند سافاری*/ url('../fonts/BYekan.eot?#iefix') format('embedded-opentype'), /*هک برای اکسپلورر 8 و ماقبل*/ url('../fonts/BYekan.woff') format('woff'), /*مرورگر های جدید*/ url('../fonts/BYekan.ttf') format('truetype') /*تمام مرورگرها به جزء اکسپلورر*/;
+}
+@font-face {
+	font-family: 'fontawesome-webfont';
+	src: url('../fonts/fontawesome-webfont.eot'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.woff');
+}
+.grid
+{
+	
+    font-family: 'BYekan';
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #000000;
+    padding-right: 6px;
+ padding-left: 6px;
+}
+.gridSarNameReson > grid
+{
+ padding-right: 6px;
+ padding-left: 6px;
+}
+
+.table_shadow
+{
+
+    font-family: BYekan;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 9px 5px 30px #CCC;
+}
+
+select.disabled
+{ 
+    display: none;
+      }
+
+
+.dropdownList
+{
+    direction: ltr;
+    text-align: left;
+}
+
+
+.selected
+{
+    background-color: #A1DCF2;
+}
+
+  .slow .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
+  .fast .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
+  .quick .toggle-group { transition: none; -webkit-transition: none; }
+    
+    
